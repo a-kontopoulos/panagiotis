@@ -3,5 +3,8 @@ Rails.application.routes.draw do
 
   #route to homepage
   root to: 'static_pages#index'
+  get  'static_pages/index'
+  get  'static_pages/contact'
+
 
 end
