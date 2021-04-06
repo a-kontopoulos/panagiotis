@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Panagiotis1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- This refers to app/javascript/stylesheets/application.scss-->
+
+  </head>
+
+  <body>
+    <%= render partial: 'header' %>
+    <!-- adding automatically content wrapper to main body -->
+    <main class="flex-shrink-0">
+    <div class="container">
+    <%= yield %>
+  </div>
+  </main>
+  <%= render partial: 'footer' %>
+  </body>
+</html>

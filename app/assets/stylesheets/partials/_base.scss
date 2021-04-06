@@ -1,0 +1,33 @@
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+
+//Colors
+$white: #fff; // white
+$black: #192127;// black
+//shades of gray
+$gray-0: #61676b;// Darkest gray
+$gray-1: #72797e;
+$gray-2: #afbac4;
+$gray-3: #bbc1c6;
+$gray-4: #e3e5e9;
+$gray-5: #f7f9fc; //Lightest gray
+
+//colors of shadows
+$shadow-color: rgba(0,0,0,0.14);//shadow of box
+$shadow-when-hover: rgba(0,0,0,0.35);//shadow when user hovers
+
+$background-color-arrow: rgba(255, 0, 0, 0.3);
+$background-color-arrow-hover: rgba(255, 0, 0, 0.5);
+$yellow-color-arrow: #ffff00;
+
+$red: #ff0000;
+
+
+.logo__social-media {
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  width: 30px;
+
+}
