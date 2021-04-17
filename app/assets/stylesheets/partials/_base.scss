@@ -31,3 +31,20 @@ $red: #ff0000;
   width: 30px;
 
 }
+
+/* CSS Grid
+   ========================================================================== */
+/**
+ * Responsive with no need of media queries,
+ * auto-fill and minmax. Full explanition:
+ *  */
+
+  .css-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-column-gap: 1.6rem;
+    grid-row-gap: 1.6rem;
+    /* Cancel rules from float layout  */
+    margin: 0 0 0 0;
+    overflow: visible;
+}

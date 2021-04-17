@@ -129,3 +129,8 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 end
+
+
+#heroku config:set SENDGRID_API_KEY=<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>
+
+#heroku config:set SENDGRID_API_KEY=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 -a obscure-badlands-36451
