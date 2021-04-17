@@ -1,0 +1,128 @@
+.disput-list .disput-item {
+  margin-bottom: 60px;
+}
+@media (max-width: 1400px) {
+  .disput-list .disput-item {
+    margin-bottom: 30px;
+  }
+}
+
+.disput-item {
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 264px;
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+
+.disput-item--1 {
+  background-image: url('immigration.jpg');
+}
+.disput-item--2 {
+  background-image: url('white-collar-small.jpg');
+}
+.disput-item--3 {
+  background-image: url("real-estate-small.jpg");
+}
+.disput-item--4 {
+  background-image: url("tax-small.jpg");
+}
+.disput-item--5 {
+  background-image: url("contract-small.jpg");
+}
+.disput-item--6 {
+  background-image: url("invest-small.jpg");
+}
+.disput-item:hover {
+  box-shadow: 0 5px 15px 0 rgba(19, 21, 68, 0.6);
+}
+
+.disput-item:hover .disput-item__btn {
+  background: #d1b36c;
+  color: #FFF;
+}
+
+.disput-item:hover:before {
+  transform: translate3d(0, 0, 0) rotate(45deg) scaleY(1);
+  transition: transform 0.8s ease;
+}
+
+.disput-item:before {
+  content: "";
+  position: absolute;
+  top: -300px;
+  left: -300px;
+  width: 600px;
+  height: 600px;
+  transform: translate3d(0, 0, 0) rotate(45deg) scaleY(0);
+  background: rgba(35, 39, 128, 0.3);
+  transform-origin: center bottom;
+  transition: transform 0.5s ease;
+}
+
+.disput-item__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  padding: 20px;
+  transition: background 0.3s ease;
+}
+
+@media (max-width: 680px) {
+  .disput-item__content {
+    padding: 15px;
+  }
+}
+
+.disput-item__name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.disput-item__name small {
+  display: block;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Rg", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 10px;
+}
+
+.disput-item__btn {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #d1b36c;
+  background: #000;
+  background: rgba(35, 39, 128, 0.3);
+  color: #d1b36c;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 14px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+@media (max-width: 680px) {
+  .disput-item__btn {
+    padding: 10px;
+  }
+}
+.disput-item__btn .i-ar-right {
+  font-size: 9px;
+  margin-left: 8px;
+}
