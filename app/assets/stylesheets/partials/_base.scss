@@ -48,3 +48,14 @@ $red: #ff0000;
     margin: 0 0 0 0;
     overflow: visible;
 }
+
+
+/**
+ * The bare-list object which removes the indents
+ * and bullets from a list.
+ */
+
+.bare-list {
+  list-style-type: none;
+  padding: 0;
+}

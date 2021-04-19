@@ -1,19 +1,42 @@
-<h1>Contact Me</h1>
-  <div class="col-md-6 col-md-offset-3">
+
+
+  <div class="row">
+    <div class="col-md">
+      <div class="contact__header">
+      <h1>Need Futher Information</h1>
+      <h2>Get in touch</h2>
+      </div>
     <%= form_with(model: @message, local: true) do |f| %>
       <div class="mb-3">
-        <%= f.label :email, class: "form-label" %>
+        <%= f.label :email, 'Your email', class: "form-label" %>
         <%= f.email_field :email, class: "form-control" %>
       </div>
       <div class="mb-3">
-        <%= f.label :name, class: "form-label" %>
+        <%= f.label :name, 'Your full name', class: "form-label" %>
         <%= f.text_field :name, class: "form-control" %>
       </div>
       <div class="mb-3">
-        <%= f.label :message, "Your Message", class: "form-label" %>
+        <%= f.label :message, 'Send us a message', class: "form-label" %>
         <%= f.text_area :message, class: "form-control" %>
       </div>
       <%= f.submit "Send Message", class: "btn btn-primary" %>
     <% end %>
   </div>
-</div>
+    <div class="col-md contact__header">
+    <div class="contact__phone ">
+
+
+    <h2 class="" >Contact Number</h2>
+    <ul class = "bare-list">
+    <li>  <%= image_tag 'phone_with_wire.svg' %>+30 210000213232 </li>
+    <li>  <%= image_tag 'telegram_logo.svg' %> +30 695 629 8288</li>
+    <li>  <%= image_tag 'viber-logo.svg' %> +30 695 629 8288</li>
+    <li>  <%= image_tag 'whatsapp_logo.svg' %> +30 695 629 8288</li>
+    </ul>
+    </div>
+    <div class="contact__map" id="map">
+      <h2> Address </h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12579.673358835269!2d23.731975!3d37.979035!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd3b95440001%3A0x6baec98dbc8127e4!2sloannou%20Paparrigopoulou%203%2C%20Athina%20105%2061%2C%20Greece!5e0!3m2!1sen!2ses!4v1618825530057!5m2!1sen!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    </div>
+  </div>
