@@ -9,15 +9,15 @@
     <%= form_with(model: @message, local: true) do |f| %>
       <div class="mb-3">
         <%= f.label :email, 'Your email', class: "form-label" %>
-        <%= f.email_field :email, class: "form-control" %>
+        <%= f.email_field :email, class: "form-control", placeholder: 'e.g client@email.com', required: true%>
       </div>
       <div class="mb-3">
         <%= f.label :name, 'Your full name', class: "form-label" %>
-        <%= f.text_field :name, class: "form-control" %>
+        <%= f.text_field :name, class: "form-control", placeholder: 'e.g Mr Smith', required: true %>
       </div>
       <div class="mb-3">
         <%= f.label :message, 'Send us a message', class: "form-label" %>
-        <%= f.text_area :message, class: "form-control" %>
+        <%= f.text_area :message, class: "form-control", placeholder: 'Please type your message here...', required: true %>
       </div>
       <%= f.submit "Send Message", class: "btn btn-primary" %>
     <% end %>
