@@ -18,7 +18,7 @@ Rails.application.configure do
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
   # or in config/master.key. This key is used to decrypt credentials (and other encrypted files).
-  # config.require_master_key = true
+   config.require_master_key = true
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
@@ -66,19 +66,38 @@ Rails.application.configure do
 
   # Sending emails in production
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
-  config.action_mailer.raise_delivery_errors = true
+  # THIS IS OLD CODE
+  # config.action_mailer.raise_delivery_errors = true
+  # config.action_mailer.delivery_method = :smtp
+  # host = 'https://obscure-badlands-36451.herokuapp.com'
+  # config.action_mailer.default_url_options = { host: host }
+  # ActionMailer::Base.smtp_settings = {
+  #   :address        => 'smtp.sendgrid.net',
+  #   :port           => '587',
+  #   :authentication => :plain,
+  #   :user_name      => 'apikey',
+  #   :password       => ENV['SENDGRID_API_KEY'],
+  #   :domain         => 'heroku.com',
+  #   :enable_starttls_auto => true
+  # }
+  # END OF OLD CODE
+
   config.action_mailer.delivery_method = :smtp
-  host = 'https://obscure-badlands-36451.herokuapp.com'
+  host = 'https://obscure-badlands-36451.herokuapp.com/' #replace with your own url
   config.action_mailer.default_url_options = { host: host }
-  ActionMailer::Base.smtp_settings = {
-    :address        => 'smtp.sendgrid.net',
-    :port           => '587',
-    :authentication => :plain,
-    :user_name      => 'apikey',
-    :password       => ENV['SENDGRID_API_KEY'],
-    :domain         => 'heroku.com',
+
+  # SMTP settings for gmail
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :user_name            => ENV['GMAIL_USERNAME'], #<gmail_username>,
+    :password             => ENV['GOOGLE_APP_PASSWORD'], #Í<gmail_password>,
+    :authentication       => "plain",
     :enable_starttls_auto => true
   }
+
+
+
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
