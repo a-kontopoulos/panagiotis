@@ -6,8 +6,8 @@ class User < ApplicationRecord
   attr_accessor :remember_token, :activation_token
   #dowcases the email address
   before_save   :downcase_email
-  #creates activation token and activation digest token attributes
-  before_create :create_activation_digest
+  
+
   #constant for valid email regex
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
