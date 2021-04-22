@@ -6,15 +6,13 @@
         <%= f.email_field :email, class: "form-control" %>
       </div>
       <div class="mb-3">
-        <%= f.label :item__name, class: "form-label" %>
+        <%= f.label :passord, "Password", class: "form-label" %>
         <%= f.password_field :password, class: "form-control" %>
       </div>
       <div class="form-group">
         <!--ingredients of recipe -->
-        <%= f.label 'Message', class:"required" %>
-        <%= f.text_area :message,  class: 'form-control',
-        placeholder: "please send your message here" %>
-        <small class="form-text text-muted mb-2">We will reply as soon as we can</small>
+        <%= f.label :password_confirmation, "Confirmation", class:"required" %>
+        <%= f.password_field :password_confirmation, class:"form-control" %>
       </div>
     <% end %>
   </div>
