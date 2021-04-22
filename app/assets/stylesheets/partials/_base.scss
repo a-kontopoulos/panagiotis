@@ -24,6 +24,16 @@ $yellow-color-arrow: #ffff00;
 $red: #ff0000;
 
 
+
+/* ==============================
+/*  Typography
+ * ============================== */
+
+@font-face {
+  font-family: "Raleway";
+  src: asset-url('Raleway.ttf') format("truetype");
+}
+
 .logo__social-media {
   margin: 0;
   padding: 0;
