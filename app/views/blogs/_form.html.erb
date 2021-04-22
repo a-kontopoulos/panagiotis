@@ -1,0 +1,15 @@
+<%= form_with(model: blog, local: true ,html: { class: 'col-lg-10 offset-lg-1 form__groups' }) do |f| %>
+<div class="mb-3">
+  <%= f.label :title, 'Title of Blog', class: "form-label" %>
+  <%= f.email_field :title, class: "form-control", required: true%>
+</div>
+<div class="mb-3">
+  <%= f.label :abstract, 'Abstract', class: "form-label" %>
+  <%= f.text_area :abstract, class: "form-control",  required: true %>
+</div>
+<div class="mb-3">
+  <%= f.label :body, 'Blog Entry', class: "form-label" %>
+  <%= f.text_area :body, class: "form-control", required: true %>
+</div>
+<%= f.submit class: "btn btn-primary" %>
+<% end %>
