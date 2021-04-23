@@ -18,8 +18,11 @@
 .expertise__title {
   color: white;
   align-self: center;
-  font-family: 'Raleway';
+  font-family: 'Commissioner-Regular';
+  color: white;
 }
+
+
 
 .expertise__body {
   display: flex;
@@ -33,7 +36,7 @@
   color: #192127;
 }
 
-.main-picture {
+.expertise-picture {
   margin: 0 0 0 0;
   height: 100%;
   -o-object-fit: contain;
@@ -65,4 +68,31 @@
 
 .button__contact {
   width: 25%;
+}
+
+
+@media (max-width: 1400px) {
+
+  .disput-list .disput-item {
+    margin-bottom: 30px;
+  }
+
+.expertise-picture {
+  margin: 0 0 1em;
+}
+
+
+.expertise__text {
+  margin: 0 0 1em;
+}
+
+.expertise__list {
+  margin: 0 0 1em;
+}
+
+.button__contact {
+  margin: 0 0 1em;
+  width: 25%;
+}
+
 }

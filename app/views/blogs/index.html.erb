@@ -1,0 +1,5 @@
+<ul class="recipe-card-list bare-list css-grid">
+  <% @blogs.order(created_at: :asc).each do |blog| %>
+  <li> <%= render partial: 'blog-card', locals: { blog: blog } %> </li>
+  <% end %>
+</ul>

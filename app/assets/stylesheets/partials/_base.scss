@@ -64,13 +64,41 @@ $red: #ff0000;
  	quotes: "" "";
  }
 
+ /* ==============================
+ /*  Footer
+  * ============================== */
+
+
+  .content {
+   min-height: calc(100vh - 60px);
+   margin: 0 0 1.5em 0;
+ }
+ .footer {
+   height: 60px;
+ }
+
 /* ==============================
 /*  Typography
  * ============================== */
 
 @font-face {
-  font-family: "Raleway";
-  src: asset-url('Raleway.ttf') format("truetype");
+  font-family: "Commissioner-Light";
+  src: asset-url('Commissioner-Light.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Commissioner-ExtraLight";
+  src: asset-url('Commissioner-ExtraLight.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Commissioner-Regular";
+  src: asset-url('Commissioner-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Commissioner-Bold";
+  src: asset-url('Commissioner-Bold.ttf') format("truetype");
 }
 
 .logo__social-media {

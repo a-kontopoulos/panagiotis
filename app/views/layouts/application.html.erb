@@ -13,14 +13,17 @@
   </head>
 
   <body>
-    <%= render partial: 'header' %>
-    <!-- adding automatically content wrapper to main body -->
-    <main class="flex-shrink-0">
-    <div class="container">
-    <%= yield %>
-    <%# <%= debug(params) if Rails.env.development? %>
-  </div>
-  </main>
+    <div class="content">
+      <%= render partial: 'header' %>
+      <!-- adding automatically content wrapper to main body -->
+      <main class="flex-shrink-0">
+      <div class="container">
+      <%= yield %>
+      <%# <%= debug(params) if Rails.env.development? %>
+    </div>
+    </main>
+    </div>
+
   <%= render partial: 'footer' %>
   </body>
 </html>

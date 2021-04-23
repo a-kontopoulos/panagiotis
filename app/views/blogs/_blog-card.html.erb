@@ -1,2 +1,4 @@
-<h2><%= @blog.title %></h2>
-<p><%= @blog.abstract %></p>
+<%= link_to blog_path(blog) do %>
+<h2><%= blog.title %></h2>
+<p><%= blog.abstract %></p>
+<% end %>

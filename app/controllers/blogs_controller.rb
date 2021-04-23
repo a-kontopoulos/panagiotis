@@ -2,11 +2,12 @@ class BlogsController < ApplicationController
 
   include SessionsHelper
 
-  before_action :set_blog, only: [:show, :edit, :update, :destroy]
+  before_action :set_blog, only: [:show, :edit,:update, :destroy]
 
   before_action :is_logged_in?, only: [:new, :create, :update, :destroy]
 
   def index
+    @blogs = Blog.all
   end
 
   def show
@@ -15,7 +16,7 @@ class BlogsController < ApplicationController
   end
 
   def new
-    @blog = Blog.new
+    @blog = Blog.new(params[:blog])
   end
 
   def create
@@ -27,12 +28,14 @@ class BlogsController < ApplicationController
         # In this format call, the flash message is being passed directly to
         # redirect_to().  It's a caonvenient way of setting a flash notice or
         # alert without referencing the flash Hash explicitly.
-        format.html { redirect_to recipe_path(@blog), notice: 'Your blog entry was successfully published.' }
+        format.html { redirect_to blog_path(@blog), notice: 'Your blog entry was successfully published.' }
       else
         #otherwise go back to new action
         format.html { render :new }
       end
+
     end
+
   end
 
 def update
@@ -47,8 +50,9 @@ def update
     else
       format.html { render :edit }
     end
+
   end
-  end
+
 end
 
 
@@ -66,9 +70,11 @@ end
                                   :abstract,
                                   :body
     )
+  end
 
   # Use callbacks to share common setup or constraints between actions.
   def set_blog
     @blog = Blog.find(params[:id])
   end
+
 end

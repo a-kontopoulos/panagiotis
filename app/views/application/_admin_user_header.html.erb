@@ -1,6 +1,9 @@
 <ul class="navbar-nav flex-fill justify-content-evenly">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Composer Article</a>
+    <%= link_to "Compose Article", new_blog_path ,class: "nav-link" %>
+  </li>
+  <li class="nav-item">
+    <%= link_to 'Articles', blogs_path, class:"nav-link" %>
   </li>
   <li class="nav-item">
     <%= link_to "Log out", logout_path, class: "nav-link" ,method: :delete %>
