@@ -38,7 +38,7 @@
   background-image: url("invest-small.jpg");
 }
 .disput-item:hover {
-  box-shadow: 0 5px 15px 0 rgba(19, 21, 68, 0.6);
+  box-shadow: 0 15px 15px 0 rgba(19, 21, 68, 0.6);
 }
 
 .disput-item:hover .disput-item__btn {
@@ -46,89 +46,89 @@
   color: #FFF;
 }
 
-.disput-item:hover:before {
-  transform: translate3d(0, 0, 0) rotate(45deg) scaleY(1);
-  transition: transform 0.8s ease;
-}
+// .disput-item:hover:before {
+//   transform: translate3d(0, 0, 0) rotate(45deg) scaleY(1);
+//   transition: transform 0.8s ease;
+// }
 
 
-.disput-item-1:before {
-  content: "";
-  position: absolute;
-  top: -300px;
-  left: -300px;
-  width: 600px;
-  height: 600px;
-  transform: translate3d(0, 0, 0) rotate(45deg) scaleY(0);
-  background-image: url('immigration-c.jpg');
-  transform-origin: center bottom;
-  transition: transform 0.5s ease;
-}
-
-.disput-item-2:before {
-  content: "";
-  position: absolute;
-  top: -300px;
-  left: -300px;
-  width: 600px;
-  height: 600px;
-  transform: translate3d(0, 0, 0) rotate(45deg) scaleY(0);
-  background-image: url('white-collar-c.jpg');
-  transform-origin: center bottom;
-  transition: transform 0.5s ease;
-}
-
-.disput-item-3:before {
-  content: "";
-  position: absolute;
-  top: -300px;
-  left: -300px;
-  width: 600px;
-  height: 600px;
-  transform: translate3d(0, 0, 0) rotate(45deg) scaleY(0);
-  background-image: url("real-estate-c.jpg");
-  transform-origin: center bottom;
-  transition: transform 0.5s ease;
-}
-
-.disput-item-4:before {
-  content: "";
-  position: absolute;
-  top: -300px;
-  left: -300px;
-  width: 600px;
-  height: 600px;
-  transform: translate3d(0, 0, 0) rotate(45deg) scaleY(0);
-  background-image: url("tax-c.jpg");
-  transform-origin: center bottom;
-  transition: transform 0.5s ease;
-}
-
-.disput-item-5:before {
-  content: "";
-  position: absolute;
-  top: -300px;
-  left: -300px;
-  width: 600px;
-  height: 600px;
-  transform: translate3d(0, 0, 0) rotate(45deg) scaleY(0);
-  background-image: url("contract-c.jpg");
-  transform-origin: center bottom;
-  transition: transform 0.5s ease;
-}
-
-.disput-item-6:before {
-  content: "";
-  position: absolute;
-  top: -300px;
-  left: -300px;
-  width: 600px;
-  height: 600px;
-  transform: translate3d(0, 0, 0) rotate(45deg) scaleY(0);
-  background-image: url("invest-c.jpg");
-  transform-origin: center bottom;
-  transition: transform 0.5s ease;
-}
+// .disput-item-1:before {
+//   content: "";
+//   position: absolute;
+//   top: -300px;
+//   left: -300px;
+//   width: 600px;
+//   height: 600px;
+//   transform: translate3d(0, 0, 0) rotate(45deg) scaleY(0);
+//   background-image: url('immigration-c.jpg');
+//   transform-origin: center bottom;
+//   transition: transform 0.5s ease;
+// }
+//
+// .disput-item-2:before {
+//   content: "";
+//   position: absolute;
+//   top: -300px;
+//   left: -300px;
+//   width: 600px;
+//   height: 600px;
+//   transform: translate3d(0, 0, 0) rotate(45deg) scaleY(0);
+//   background-image: url('white-collar-c.jpg');
+//   transform-origin: center bottom;
+//   transition: transform 0.5s ease;
+// }
+//
+// .disput-item-3:before {
+//   content: "";
+//   position: absolute;
+//   top: -300px;
+//   left: -300px;
+//   width: 600px;
+//   height: 600px;
+//   transform: translate3d(0, 0, 0) rotate(45deg) scaleY(0);
+//   background-image: url("real-estate-c.jpg");
+//   transform-origin: center bottom;
+//   transition: transform 0.5s ease;
+// }
+//
+// .disput-item-4:before {
+//   content: "";
+//   position: absolute;
+//   top: -300px;
+//   left: -300px;
+//   width: 600px;
+//   height: 600px;
+//   transform: translate3d(0, 0, 0) rotate(45deg) scaleY(0);
+//   background-image: url("tax-c.jpg");
+//   transform-origin: center bottom;
+//   transition: transform 0.5s ease;
+// }
+//
+// .disput-item-5:before {
+//   content: "";
+//   position: absolute;
+//   top: -300px;
+//   left: -300px;
+//   width: 600px;
+//   height: 600px;
+//   transform: translate3d(0, 0, 0) rotate(45deg) scaleY(0);
+//   background-image: url("contract-c.jpg");
+//   transform-origin: center bottom;
+//   transition: transform 0.5s ease;
+// }
+//
+// .disput-item-6:before {
+//   content: "";
+//   position: absolute;
+//   top: -300px;
+//   left: -300px;
+//   width: 600px;
+//   height: 600px;
+//   transform: translate3d(0, 0, 0) rotate(45deg) scaleY(0);
+//   background-image: url("invest-c.jpg");
+//   transform-origin: center bottom;
+//   transition: transform 0.5s ease;
+// }
 
 .disput-item__content {
   display: flex;
@@ -200,24 +200,24 @@ small {
 }
 
 
-// @media (max-width: 992px) {
-//
-//   .disput-item--1:hover {
-//     background-image: url('immigration-c.jpg');
-//   }
-//   .disput-item--2:hover {
-//     background-image: url('white-collar-c.jpg');
-//   }
-//   .disput-item--3:hover {
-//     background-image: url("real-estate-c.jpg");
-//   }
-//   .disput-item--4:hover {
-//     background-image: url("tax-c.jpg");
-//   }
-//   .disput-item--5:hover {
-//     background-image: url("contract-c.jpg");
-//   }
-//   .disput-item--6:hover {
-//     background-image: url("invest-c.jpg");
-//   }
-// }
+
+
+  .disput-item--1:hover {
+
+    background-image: url('immigration-c.jpg');
+  }
+  .disput-item--2:hover {
+    background-image: url('white-collar-c.jpg');
+  }
+  .disput-item--3:hover {
+    background-image: url("real-estate-c.jpg");
+  }
+  .disput-item--4:hover {
+    background-image: url("tax-c.jpg");
+  }
+  .disput-item--5:hover {
+    background-image: url("contract-c.jpg");
+  }
+  .disput-item--6:hover {
+    background-image: url("invest-c.jpg");
+  }
