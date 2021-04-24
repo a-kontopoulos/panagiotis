@@ -1,0 +1,42 @@
+.contact__header {
+  padding: 3em 0 0 0;
+  margin: 0 0 2em 0;
+
+
+h1 {
+  color: #192127;
+}
+
+}
+
+.contact__body {
+
+  h2 {
+    margin: 0 0 .7em 0;
+    color: #72797e;
+  }
+
+  .contact__phone {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+
+
+    li {
+      margin: 0 0 .4em 0;
+      color: #72797e;
+    }
+
+  }
+
+  .contact__map {
+
+  overflow: auto;
+
+  }
+
+
+}

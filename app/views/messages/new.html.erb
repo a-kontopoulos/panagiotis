@@ -1,28 +1,10 @@
 
+<div class="contact__header row">
+<h1>Need Futher Information</h1>
+</div>
+  <div class="row contact__body">
 
-  <div class="row">
-    <div class="col-md">
-      <div class="contact__header">
-      <h1>Need Futher Information</h1>
-      <h2 class="contact__subheader">Get In Touch</h2>
-      </div>
-    <%= form_with(model: @message, local: true) do |f| %>
-      <div class="mb-3">
-        <%= f.label :email, 'Your email', class: "form-label" %>
-        <%= f.email_field :email, class: "form-control", placeholder: 'e.g client@email.com', required: true%>
-      </div>
-      <div class="mb-3">
-        <%= f.label :name, 'Your full name', class: "form-label" %>
-        <%= f.text_field :name, class: "form-control", placeholder: 'e.g Mr Smith', required: true %>
-      </div>
-      <div class="mb-3">
-        <%= f.label :message, 'Send us a message', class: "form-label" %>
-        <%= f.text_area :message, class: "form-control", placeholder: 'Please type your message here...', required: true %>
-      </div>
-      <%= f.submit "Send Message", class: "btn btn-primary" %>
-    <% end %>
-  </div>
-    <div class="col-md contact__header">
+    <div class="col-md-4">
     <div class="contact__phone ">
 
 
@@ -39,4 +21,22 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12579.673358835269!2d23.731975!3d37.979035!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd3b95440001%3A0x6baec98dbc8127e4!2sloannou%20Paparrigopoulou%203%2C%20Athina%20105%2061%2C%20Greece!5e0!3m2!1sen!2ses!4v1618825530057!5m2!1sen!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     </div>
+    <div class="col-md-4">
+    <h2 class="contact__phone ">Send Us a Message</h2>
+    <%= form_with(model: @message, local: true) do |f| %>
+      <div class="mb-3">
+        <%= f.label :email, 'Your email', class: "form-label" %>
+        <%= f.email_field :email, class: "form-control", placeholder: 'e.g client@email.com', required: true%>
+      </div>
+      <div class="mb-3">
+        <%= f.label :name, 'Your full name', class: "form-label" %>
+        <%= f.text_field :name, class: "form-control", placeholder: 'e.g Mr Smith', required: true %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :message, 'Send us a message', class: "form-label" %>
+        <%= f.text_area :message, class: "form-control", placeholder: 'Please type your message here...', required: true %>
+      </div>
+      <%= f.submit "Send Message", class: "btn btn-primary" %>
+    <% end %>
+  </div>
   </div>
