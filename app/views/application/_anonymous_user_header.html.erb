@@ -1,21 +1,21 @@
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
 </button>
-<div class="flex-fill">
-<div class="collapse navbar-collapse" id="navbarNavDropdown">
-  <ul class="navbar-nav flex-fill justify-content-evenly">
-    <li class="nav-item">
+<div class="">
+<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+  <ul class="navbar-nav">
+    <li class="nav-item me-5">
       <a class="nav-link active" aria-current="page" href="#">About Me</a>
     </li>
-    <li class="nav-item">
-      <%= link_to 'Articles', blogs_path, class:"nav-link" %>
+    <li class="nav-item me-5">
+      <%= link_to 'News & Insights', blogs_path, class:"nav-link" %>
     </li>
-    <li class="nav-item">
+    <li class="nav-item me-5">
       <%= link_to 'Contact', contact_path, class:"nav-link" %>
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Practices
+        Law Practices
       </a>
       <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         <li><a class="dropdown-item" href="#">Immigration</a></li>

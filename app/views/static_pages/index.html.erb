@@ -1,6 +1,8 @@
 <div class="expertise__header">
-  <h1 class="expertise__title">Panagiotis <span class="logo__first-letter"> Z</span>inovief</h1>
-  <h2 class="expertise__title">Law Firm</h2>
+  <div class="expertise__title">
+    <h1 >Panagiotis <span class="logo__first-letter"> Z</span>inovief</h1>
+    <h2 ">Law Firm</h2>
+  </div>
 </div>
 <div class="css-grid">
   <%= render partial: 'practice-box', locals: { :link => 'immigration', :image_class => 'disput-item--1 disput-item-1', :expertise => 'Immigration'} %>
@@ -9,4 +11,25 @@
   <%= render partial: 'practice-box', locals: { :link => 'tax', :image_class => 'disput-item--4 disput-item-4', :expertise => 'Tax'}   %>
   <%= render partial: 'practice-box', locals: { :link => 'civil_law', :image_class => 'disput-item--5 disput-item-5', :expertise => 'Civil Law'}   %>
   <%= render partial: 'practice-box', locals: { :link => 'invest_in_greece', :image_class => 'disput-item--6 disput-item-6', :expertise => 'Invest in Greece'}   %>
+</div>
+<div class="about">
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="about__text--header">
+        <h2>Lawyer</h2>
+        <h2>Zinovief Panagiotis</h2>
+        <h4>Your trusted lawyer</h4>
+      </div>
+      <div class="about__text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <%= link_to 'Contact Us', contact_path, class: "btn btn-outline-primary button__contact" %>
+    </div>
+    <div class="col-lg-4">
+      <%= image_tag('profile-pic.jpeg', class: "about__profile-pic") %>
+    </div>
+
+  </div>
+
 </div>

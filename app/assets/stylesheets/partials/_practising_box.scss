@@ -15,7 +15,8 @@
   background-repeat: no-repeat;
   height: 264px;
   transition: box-shadow 0.3s ease;
-  overflow: auto;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 
@@ -54,7 +55,7 @@
   * See http://animista.net/license for more info.
   * w: http://animista.net, t: @cssanimista
   * ---------------------------------------------- */
-  
+
 
 .disput-item:hover .disput-item__btn {
   background: #d1b36c;

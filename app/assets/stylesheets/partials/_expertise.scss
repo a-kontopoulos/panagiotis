@@ -3,22 +3,27 @@
 }
 
 .expertise__header {
-  background-image: url('stoa-attalou.jpg');
+  margin: 0 0 3em 0;
+  background-image: url('abstract_building.jpg');
   position: relative;
+  opacity: 0.9;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height: 300px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  margin: 0 0 3em 0;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .expertise__title {
+
   color: white;
-  align-self: center;
-  font-family: 'Commissioner-Regular';
+  font-family: 'Jura-Bold';
+  font-weight: bold;
+  font-size: 3em;
   color: white;
 }
 
@@ -26,7 +31,7 @@
 
 .expertise__body {
   display: flex;
-  padding: 3em 0 0 0;
+  padding: 2em 0 0 0;
 }
 
 .header {
@@ -49,7 +54,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   color: #61676b;
 }
 
@@ -93,6 +97,7 @@
 .button__contact {
   margin: 0 0 1em;
   width: 25%;
+  align-self: flex-end;
 }
 
 }

@@ -1,0 +1,30 @@
+.about {
+  padding: 3em 0 0 0;
+}
+
+.about__profile-pic {
+  max-width: 100%;
+
+}
+
+
+
+
+  .about__text--header {
+    padding: 0 0 1em 0;
+
+    h4{
+      color: #61676b;
+    }
+  }
+
+.about__text {
+  color: #72797e;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .about__profile-pic {
+    display: none;
+  }
+}
