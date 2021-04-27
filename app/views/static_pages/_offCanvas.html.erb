@@ -1,0 +1,38 @@
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <div class="class="offcanvas-title"">
+    <h2  id="offcanvasWithBothOptions">Contact Us</h2>
+    <div class="contact__phone-offCanvas">
+    <h3 class="" >Contact Number</h2>
+    <ul class = "bare-list">
+    <li>  <%= image_tag 'phone_with_wire.svg' %>+30 210000213232 </li>
+    <li>  <%= image_tag 'telegram_logo.svg' %> +30 695 629 8288</li>
+    <li>  <%= image_tag 'viber-logo.svg' %> +30 695 629 8288</li>
+    <li>  <%= image_tag 'whatsapp_logo.svg' %> +30 695 629 8288</li>
+    </ul>
+    </div>
+    <h3 class="contact__email-offCanvas">Send Us a Message</h2>
+    <%= form_with(model: @message, local: true) do |f| %>
+      <div class="mb-3">
+        <%= f.label :email, 'Your email', class: "form-label" %>
+        <%= f.email_field :email, class: "form-control", placeholder: 'e.g client@email.com', required: true%>
+      </div>
+      <div class="mb-3">
+        <%= f.label :name, 'Your full name', class: "form-label" %>
+        <%= f.text_field :name, class: "form-control", placeholder: 'e.g Mr Smith', required: true %>
+      </div>
+      <div class="mb-3">
+        <%= f.label :message, 'Send us a message', class: "form-label" %>
+        <%= f.text_area :message, class: "form-control", placeholder: 'Please type your message here...', required: true %>
+      </div>
+      <div class="contact__submit-offCanvas">
+        <%= f.submit "Send Message", class: " btn-primary btn" %>
+      </div>
+
+    <% end %>
+    </div>
+
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  </div>

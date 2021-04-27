@@ -1,0 +1,25 @@
+<script type="text/javascript">
+
+  function myFunction(clicked_id) {
+
+
+   var element = document.getElementById(clicked_id);
+
+
+   if (element.classList.contains("active")) {
+
+     element.classList.toggle("active");
+
+   } else {
+
+ var elems = document.querySelectorAll(".solutions-item.active");
+
+  [].forEach.call(elems, function(el) {
+    el.classList.remove("active");
+      });
+
+      element.classList.toggle("active");
+    }
+  }
+
+</script>

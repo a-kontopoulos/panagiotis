@@ -1,0 +1,35 @@
+.contact__phone-offCanvas {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #72797e;
+
+  h3 {
+
+    padding: .5em 0 .5em 0;
+
+  }
+
+  li {
+    margin: 0 0 .4em 0;
+    color: #72797e;
+  }
+
+}
+
+.contact__email-offCanvas {
+
+  color: #72797e;
+  padding: .5em 0 .5em 0;
+
+
+
+}
+
+.contact__submit-offCanvas {
+
+  margin: 2em 0em 0em 0em;
+  color: red;
+
+}
