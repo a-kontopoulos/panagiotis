@@ -68,7 +68,8 @@ end
     params.require(:blog).permit(
                                   :title,
                                   :abstract,
-                                  :body
+                                  :body,
+                                  :image
     )
   end
 

@@ -1,4 +1,18 @@
-<%= link_to blog_path(blog) do %>
-<h2><%= blog.title %></h2>
-<p><%= blog.abstract %></p>
-<% end %>
+
+
+<div class="blog-card">
+  <!-- Image link to recipe's page-->
+
+  <div class="blog-card__thumb">
+    <%= link_to blog_path(blog) do%>
+      <%= render(partial: 'blog_image', locals: { blog: blog }) %>
+    <% end %>
+  </div>
+  <!-- Recipe Card Footer-->
+  <div class="blog-card__footer">
+    <!-- Recipe Card Title-->
+    <h4 class="blog-card__title"> <%= blog.title %></h4>
+    <!-- Recipe Card Recipe Description-->
+    <span class = "blog-card__abstract"><%= blog.abstract %></span>
+  </div>
+</div>

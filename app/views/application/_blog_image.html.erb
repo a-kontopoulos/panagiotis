@@ -1,0 +1,8 @@
+<!--checks if user has uploaded image of blog-->
+<% if blog.image.attached? %>
+<!--link to uploaded image by user-->
+<%= image_tag blog.image, alt: "#{blog.title}" %>
+<% else %>
+ <!--otherwise load default image of a recipe-->
+ <%= image_tag('blog_generic_picture-bw', class:'blog-card__thumb' , alt: "#{blog.title}") %>
+<% end %>

@@ -1,2 +1,20 @@
-<h1><%= @blog.title %></h1>
+
+<div class="blog">
+
+
+
+<div class="blog__image">
+<% if @blog.image.attached? %>
+  <%= image_tag @blog.image, alt: "Image for #{@blog.title}" %>
+<% else %>
+  <%= image_tag('blog_generic_picture.jpg', alt: "Avatar for #{@blog.title}" )%>
+<% end %>
+</div>
+<div class="blog__header">
+  <h1><%= @blog.title %></h1>
+</div>
+<div class="blog__text" >
 <p><%= simple_format(@blog.body) %></p>
+</div>
+
+</div>
