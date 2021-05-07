@@ -2,12 +2,12 @@ class BlogsController < ApplicationController
 
   include SessionsHelper
 
-  before_action :set_blog, only: [:show, :edit,:update, :destroy]
+  before_action :set_blog, only: [:show, :edit, :update, :destroy]
 
   before_action :is_logged_in?, only: [:new, :create, :update, :destroy]
 
   def index
-    @blogs = Blog.all
+    @blogs = Blog.all.page(params[:page])
   end
 
   def show
@@ -59,6 +59,7 @@ end
   def destroy
     #deletes the recipe instance
     @blog.destroy!
+    redirect_to blogs_path
   end
 
   private

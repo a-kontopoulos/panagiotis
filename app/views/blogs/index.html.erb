@@ -2,4 +2,7 @@
   <% @blogs.order(created_at: :asc).each do |blog| %>
   <li> <%= render partial: 'blog-card', locals: { blog: blog } %> </li>
   <% end %>
+  <div class="see-more">
+    <%= paginate @blogs %>
+  </div>
 </ul>

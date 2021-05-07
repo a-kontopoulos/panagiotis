@@ -2,6 +2,8 @@ class StaticPagesController < ApplicationController
 
   def index
     @message = Message.new(params[:message])
+    #creates object with recipes ordered starting from the most recent
+    @blogs = Blog.most_recent
   end
 
   def civilLaw

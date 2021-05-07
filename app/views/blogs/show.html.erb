@@ -16,5 +16,10 @@
 <div class="blog__text" >
 <p><%= simple_format(@blog.body) %></p>
 </div>
-
+<% if is_logged_in? %>
+  <div class="edit-delete-buttons">
+    <%= link_to 'edit post', edit_blog_path(@blog), class: 'btn btn-warning' %>
+    <%= link_to 'delete post', blog_path(@blog), class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' }  %>
+  </div>
+<% end %>
 </div>
