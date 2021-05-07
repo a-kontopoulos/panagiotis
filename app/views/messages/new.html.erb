@@ -1,7 +1,7 @@
 
-<div class="contact__header row">
+<!-- <div class="contact__header row">
 <h1>Need Futher Information</h1>
-</div>
+</div> -->
   <div class="row contact__body">
 
     <div class="col-md-4">
@@ -17,7 +17,22 @@
     </ul>
     </div>
     <div class="contact__map" id="map">
-      <h2> Address </h2>
+      <div class="address__header">
+        <%= image_tag('location.svg') %>
+        <h2> Address </h2>
+      </div>
+
+
+      <div class="address_info">
+
+        <div class="address_details">
+          <p>Ioannou Paparrigopoulou 3,
+          <p>Athens 105 61</p>
+          <p>Greece</p>
+          <small> In the center next to the metro station Panepistimio</small>
+        </div>
+
+      </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12579.673358835269!2d23.731975!3d37.979035!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd3b95440001%3A0x6baec98dbc8127e4!2sloannou%20Paparrigopoulou%203%2C%20Athina%20105%2061%2C%20Greece!5e0!3m2!1sen!2ses!4v1618825530057!5m2!1sen!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     </div>
