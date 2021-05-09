@@ -1,16 +1,15 @@
-<div class="expertise__header">
-  <div class="expertise__title">
-    <h1><%=t('panagiotis')%><span class="logo__first-letter"> Z</span><%=t('Zinovief')%></h1>
-    <h2><%=t('lawfirm')%></h2>
+<div class="expertise__header row">
+  <div class="expertise__title col-md-8">
+    <div class="expertise__title--name">
+      <h1><%=t('panagiotis')%><span class = "logo__first-letter">  Z</span><%=t('Zinovief')%></h1>
+    </div>
+    <div class="">
+      <h2 ><%=t('lawfirm')%></h2>
+    </div>
   </div>
-</div>
-<div class="css-grid">
-  <%= render partial: 'practice-box', locals: { :link => 'immigration', :image_class => 'disput-item--1 disput-item-1', :expertise => t('specializations.immigration')} %>
-  <%= render partial: 'practice-box', locals: { :link => 'white_collar', :image_class => 'disput-item--2 disput-item-2', :expertise => t('specializations.whiteCollar')}  %>
-  <%= render partial: 'practice-box', locals: { :link => 'real_estate', :image_class => 'disput-item--3 disput-item-3', :expertise => t('specializations.realEstate')}  %>
-  <%= render partial: 'practice-box', locals: { :link => 'tax', :image_class => 'disput-item--4 disput-item-4', :expertise => t('specializations.tax')}   %>
-  <%= render partial: 'practice-box', locals: { :link => 'civil_law', :image_class => 'disput-item--5 disput-item-5', :expertise => t('specializations.civilLaw')}   %>
-  <%= render partial: 'practice-box', locals: { :link => 'invest_in_greece', :image_class => 'disput-item--6 disput-item-6', :expertise => t('specializations.investInGR')}   %>
+  <div class="expertise__saying col-md-4">
+    <span>Victorious warriors win first and then go to war while defeated warriors go to war first and then seek to win</span>
+  </div>
 </div>
 <div class="about" id = "about">
   <div class="row">
@@ -31,6 +30,15 @@
     </div>
   </div>
 </div>
+<div class="css-grid">
+  <%= render partial: 'practice-box', locals: { :link => 'immigration', :image_class => 'disput-item--1 disput-item-1', :expertise => t('specializations.immigration')} %>
+  <%= render partial: 'practice-box', locals: { :link => 'white_collar', :image_class => 'disput-item--2 disput-item-2', :expertise => t('specializations.whiteCollar')}  %>
+  <%= render partial: 'practice-box', locals: { :link => 'real_estate', :image_class => 'disput-item--3 disput-item-3', :expertise => t('specializations.realEstate')}  %>
+  <%= render partial: 'practice-box', locals: { :link => 'tax', :image_class => 'disput-item--4 disput-item-4', :expertise => t('specializations.tax')}   %>
+  <%= render partial: 'practice-box', locals: { :link => 'civil_law', :image_class => 'disput-item--5 disput-item-5', :expertise => t('specializations.civilLaw')}   %>
+  <%= render partial: 'practice-box', locals: { :link => 'invest_in_greece', :image_class => 'disput-item--6 disput-item-6', :expertise => t('specializations.investInGR')}   %>
+</div>
+
 <div class="articles">
   <div class="articles__header"">
     <h2> <%=t('articles')%> </h2>

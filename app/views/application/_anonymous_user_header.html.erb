@@ -1,14 +1,8 @@
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
 </button>
-<div class="">
 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
   <ul class="navbar-nav">
-    <li class="">
-      <% I18n.available_locales.each do |locale| %>
-        <%= link_to locale, url_for(locale: locale), class: 'text-white' %>
-      <% end %>
-    </li>
     <li class="nav-item me-5">
       <%= link_to 'About Me', root_path(anchor: "about"), class:"nav-link" %>
     </li>
@@ -32,5 +26,4 @@
       </ul>
     </li>
   </ul>
-</div>
 </div>

@@ -43,7 +43,7 @@ $red: #ff0000;
  	font-weight: inherit;
  	font-style: inherit;
  	font-size: 100%;
- 	font-family: "Jura-Regular";
+ 	font-family: 'Commissioner-Light';
  	vertical-align: baseline;
  }
  /* remember to define focus styles! */
@@ -72,8 +72,12 @@ $red: #ff0000;
   	font-weight: inherit;
   	font-style: inherit;
   	font-size: 100%;
-   font-family: "OpenSans-Bold";
+   font-family: "Jura-Bold";
    vertical-align: baseline;
+ }
+
+ h4 {
+   font-family: "Jura-Regular";
  }
 
  /* ==============================

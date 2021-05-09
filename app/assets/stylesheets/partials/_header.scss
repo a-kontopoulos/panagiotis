@@ -1,8 +1,36 @@
+
+
+
 .logo__first-letter {
-  color: blue;
+  color: #67001a;
   font-family: 'Commissioner-Light';
   letter-spacing: 1px;
 }
+
+.logo {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+
+  .logo__name {
+    display: flex;
+    flex-direction: column;
+
+    .logo__panagiotis {
+      display: flex;
+    }
+
+    .logo__subheader {
+        color: #67001a;
+    }
+
+  }
+
+
+}
+
 
 .logo__first-letter__footer{
   color: blue;
