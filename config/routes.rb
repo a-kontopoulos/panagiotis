@@ -2,8 +2,12 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   #route to homepage
-  root to: 'static_pages#index'
 
+
+  # creating route for translations
+  scope "(:locale)", locale: /en|gr|ru/ do
+
+  root to: 'static_pages#index'
 
   get 'static_pages/index', to: 'static_pages#index'
   get 'real_estate', to: 'static_pages#realEstate'
@@ -33,4 +37,5 @@ Rails.application.routes.draw do
 
   resources :blogs, only: [:show, :new, :create, :edit, :update, :index, :destroy]
 
+end
 end
