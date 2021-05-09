@@ -60,11 +60,35 @@
 
 
 
-@media (max-width: 768px) {
-  .expertise__header {
-    height: 300px;
+@media (max-width: 480px) {
+
+.expertise__header {
+
+  max-height: 300px;
+
+  .expertise__title {
+      align-self: center;
+
+      h1 {
+        font-size: 1.5em;
+      }
+
   }
+
+  .expertise__saying {
+    font-size: 1em;
+    align-self: center;
+    padding: 0 1em 0 1em;
+
+  }
+
+
+  }
+
+
+
 }
+
 
 
 .expertise__body {

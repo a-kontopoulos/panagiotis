@@ -15,7 +15,6 @@
   <div class="row">
     <div class="col-lg-8">
       <div class="about__text--header">
-        <h2><%=t('about.lawyer')%></h2>
         <h2><%=t('about.panagiotis')%></h2>
         <h4><%=t('about.subheader')%></h4>
       </div>
@@ -30,6 +29,9 @@
     </div>
   </div>
 </div>
+<div class="mb-5 pt-1">
+  <h2>Areas of Activity</h2>
+</div>
 <div class="css-grid">
   <%= render partial: 'practice-box', locals: { :link => 'immigration', :image_class => 'disput-item--1 disput-item-1', :expertise => t('specializations.immigration')} %>
   <%= render partial: 'practice-box', locals: { :link => 'white_collar', :image_class => 'disput-item--2 disput-item-2', :expertise => t('specializations.whiteCollar')}  %>
@@ -40,9 +42,7 @@
 </div>
 
 <div class="articles">
-  <div class="articles__header"">
-    <h2> <%=t('articles')%> </h2>
-  </div>
+    <h2 class="mb-5 pt-3"> <%=t('articles')%> </h2>
   <ul class="recipe-card-list bare-list css-grid">
     <% @blogs.order(created_at: :asc).each do |blog| %>
     <li> <%= render partial: 'blog-card', locals: { blog: blog } %> </li>
