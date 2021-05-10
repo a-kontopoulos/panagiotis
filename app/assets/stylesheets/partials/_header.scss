@@ -15,6 +15,7 @@
 
 
   .logo__name {
+    padding: 0 0 0 1rem;
     display: flex;
     flex-direction: column;
 
@@ -39,3 +40,44 @@
 .logo__footer {
   color: #fff;
 }
+
+ .language__mobile {
+
+    display: none;
+
+
+  }
+
+
+
+
+@media (max-width: 480px) {
+
+   .logo {
+    font-size: .8em;
+    padding: 0;
+    margin: 0;
+
+    .logo__name {
+      padding: 0 0 0 .3rem;
+
+    }
+
+  }
+
+
+    .language__mobile {
+      display: flex;
+      justify-content: flex-start;
+
+      img {
+        max-height: 1rem;
+        max-width: 1rem;
+        align-self: baseline;
+
+      }
+
+    }
+
+
+  }

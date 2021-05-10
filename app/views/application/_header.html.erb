@@ -3,21 +3,29 @@
       <%= link_to root_path, class: "navbar-brand" do %>
       <div class="logo">
         <%= image_tag(asset_url("compass.svg")) %>
-        <div class="logo__name ps-3">
+        <div class="logo__name">
           <div class="logo__panagiotis">
             <span class="logo__first-letter">Z</span>inovief Panagiotis
           </div>
           <small class="logo__subheader"> Lawyer </small>
         </div>
+      </div>
+    <% end %>
+    <li class="language language__mobile">
+      <%= link_to :locale => 'en' do %>
+      <%= image_tag 'english.svg' %>
+      <% end %>
+      <%= link_to :locale => 'ru' do %>
+      <%= image_tag 'russian.svg' %>
+      <% end %>
+      <%= link_to :locale => 'gr' do %>
+      <%= image_tag 'greek.svg' %>
+      <% end %>
+      </li>
+      <% if(is_logged_in?) %>
+        <%= render partial: 'admin_user_header' %>
+      <% else %>
+      <%= render partial: 'anonymous_user_header' %>
+      <% end %>
     </div>
-    <% end %>
-    <% if(is_logged_in?) %>
-      <%= render partial: 'admin_user_header' %>
-    <% else %>
-    <%= render partial: 'anonymous_user_header' %>
-    <% end %>
-  <% I18n.available_locales.each do |locale| %>
-    <%= link_to(locale.capitalize, url_for(locale: locale), class: "languages__elem") %>
-  <% end %>
-  </div>
 </nav>
