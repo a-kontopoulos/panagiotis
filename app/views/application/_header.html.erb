@@ -27,5 +27,16 @@
       <% else %>
       <%= render partial: 'anonymous_user_header' %>
       <% end %>
+      <li class="language language__desktop-tablet nav-item">
+        <%= link_to :locale => 'en' do %>
+        <%= image_tag 'english.svg' %>
+        <% end %>
+        <%= link_to :locale => 'ru' do %>
+        <%= image_tag 'russian.svg' %>
+        <% end %>
+        <%= link_to :locale => 'gr' do %>
+        <%= image_tag 'greek.svg' %>
+        <% end %>
+        </li>
     </div>
 </nav>

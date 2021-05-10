@@ -49,6 +49,12 @@
   }
 
 
+.language__desktop-tablet {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  padding: 0 0 0 1rem;
+}
 
 
 @media (max-width: 480px) {
@@ -78,6 +84,10 @@
 
   }
 
+
+    .language__desktop-tablet {
+      display: none;
+    }
 
     .language__mobile {
       display: flex;
