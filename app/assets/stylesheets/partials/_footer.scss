@@ -150,20 +150,32 @@
   }
 
   .footer__logo {
-    margin: 0 0 1rem 0;
+    margin: 0 0 1.5rem 0;
     align-items: center;
 
   }
 
   .footer__contact {
-    margin: 0 0 1rem 0;
-    padding: 0 0 0 2rem
+    margin: 0 0 0.5rem 0;
+    padding: 0 0 0 4rem;
+
+    .footer__address {
+      padding: 1rem 0 0 0;
+    }
 
   }
 
   .footer__menu {
 
-    padding: 0 0 0 2rem
+    padding: 0 0 0 4rem;
+
+    .footer__menu--socialmedia {
+
+      padding: 0 0 0 0;
+
+    }
+
+
 
   }
 
