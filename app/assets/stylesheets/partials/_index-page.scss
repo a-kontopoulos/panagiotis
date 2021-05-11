@@ -19,6 +19,34 @@
   color: #72797e;
 }
 
+
+.mainpage__contact {
+
+  margin: 0 0 3em 0;
+
+
+  .mainpage__contact--text {
+
+    .mainpage__contact--text__header {
+      padding: 0 0 0 0;
+      margin: 0 0 2rem 0;
+    }
+
+      }
+
+  .mainpage__contact--form {
+    form {
+    background-color: #67001a;
+    padding: 2rem;
+
+    label {
+      color: #fff;
+    }
+  }
+  }
+
+}
+
 @media only screen and (max-width: 800px) {
 
   .about__profile-pic {

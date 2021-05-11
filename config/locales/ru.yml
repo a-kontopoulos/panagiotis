@@ -156,6 +156,9 @@ ru:
     answ6: ""
   #Articles by Panagiotis - Index Home page
   articles: ""
+  #contact on index page
+  contact-index:
+    title: 'Get in Touch'
   #Blogs by Panagiotis
   zinoViefBlogs: ""
    #Contact Page

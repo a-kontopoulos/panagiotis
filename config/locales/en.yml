@@ -164,6 +164,9 @@ en:
     answ6: 'Нет, не является. Судебной практикой арбитражных судов Российской Федерации определено, что порядок оплаты не является существенным условием договора купли-продажи на том основании, что параграф 7 главы 30 Гражданского кодекса Российской Федерации не относит порядок оплаты к существенному условию договора купли-продажи недвижимости.'
   #Articles by Panagiotis - Index Home page
   articles: 'Articles'
+  #contact on index page
+  contact-index:
+    title: 'Get in Touch'
   #Blogs by Panagiotis
   zinoViefBlogs: "Zinovief's Blog Posts"
   #Contact Page
