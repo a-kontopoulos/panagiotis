@@ -12,15 +12,18 @@
       </div>
     <% end %>
     <li class="language language__mobile">
-      <%= link_to :locale => 'en' do %>
-      <%= image_tag 'english.svg' %>
-      <% end %>
-      <%= link_to :locale => 'ru' do %>
-      <%= image_tag 'russian.svg' %>
-      <% end %>
-      <%= link_to :locale => 'gr' do %>
-      <%= image_tag 'greek.svg' %>
-      <% end %>
+      <div class="header__languages">
+        <%= image_tag('globe-icon.svg')%>
+        <%= link_to :locale => 'en' do %>
+        EN
+        <% end %>
+        <%= link_to :locale => 'ru' do %>
+        РУ
+        <% end %>
+        <%= link_to :locale => 'gr' do %>
+        ΕΛ
+        <% end %>
+      </div>
       </li>
       <% if(is_logged_in?) %>
         <%= render partial: 'admin_user_header' %>
@@ -28,15 +31,18 @@
       <%= render partial: 'anonymous_user_header' %>
       <% end %>
       <li class="language language__desktop-tablet nav-item">
-        <%= link_to :locale => 'en' do %>
-        <%= image_tag 'english.svg' %>
-        <% end %>
-        <%= link_to :locale => 'ru' do %>
-        <%= image_tag 'russian.svg' %>
-        <% end %>
-        <%= link_to :locale => 'gr' do %>
-        <%= image_tag 'greek.svg' %>
-        <% end %>
+        <div class="header__languages">
+          <%= image_tag('globe-icon.svg')%>
+          <%= link_to :locale => 'en' do %>
+          EN
+          <% end %>
+          <%= link_to :locale => 'ru' do %>
+          РУ
+          <% end %>
+          <%= link_to :locale => 'gr' do %>
+          ΕΛ
+          <% end %>
+        </div>
         </li>
     </div>
 </nav>
