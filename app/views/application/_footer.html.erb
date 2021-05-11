@@ -1,22 +1,84 @@
 <footer class="footer">
-  <nav class="navbar navbar-dark bg-dark">
-  <div class="container justify-content-center">
-    <a class="navbar-brand" href="#">
-      <span class="logo__first-letter__footer">Z</span>inovief
-    </a>
-    <ul class="nav flex-fill justify-content-evenly align-items-baseline">
-      <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#">About Me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#">
-        <%= image_tag('li-in-Bug.png', class: "logo__social-media") %>
-       </a>
-      </li>
-    </ul>
+  <div class="container">
+
+  <div class="row">
+
+    <div class="footer__logo-mobile col-md-4">
+      <a>
+        <div class="footer__logo">
+        <div class="footer__logo--image">
+          <%= image_tag('compass-white.svg')%>
+        </div>
+        <div class="footer__logo--name">
+          <h5><span class="logo__first-letter__footer">Z</span>inovief<h5>
+        </div>
+        <div class="footer__logo--text">
+          <span>Your compass towards reaching the right legal decision and solution.</span>
+        </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <div class="footer__contact">
+        <div class="footer__contact--title">
+          <h5>Contact<h5>
+        </div>
+
+          <ul class="bare-list">
+            <div class="footer__phone-number">
+              <li> <%= image_tag 'phone_with_wire-white.svg' %>+30 210000213232 </li>
+              <li>  <%= image_tag 'telegram_logo.svg' %> +30 695 629 8288 </li>
+              <li>  <%= image_tag 'viber-logo.svg' %> +30 695 629 8288 </li>
+              <li>  <%= image_tag 'whatsapp_logo.svg' %> +30 695 629 8288 </li>
+            </div>
+          </ul>
+        <div class="footer__address">
+          <div class="footer__address--title">
+            <%= image_tag('location-white')%>
+            <h5>Address</h5>
+          </div>
+          <div class="footer__address_details">
+            <ul class="bare-list">
+              <li>Greece</li>
+              <li>Athens, Ioannou Paparrigopoulou 3</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <div class="footer__menu">
+      <h5>Menu</h5>
+      <ul class="bare-list">
+        <li><a class="" aria-current="page" href="#">About Me</a></li>
+        <li><a class="" aria-current="page" href="#">Area of Practices</a></li>
+        <li><a class="" aria-current="page" href="#">News & Insights</a></li>
+      </ul>
+      <div class="footer__menu--socialmedia">
+        <ul class="bare-list">
+          <li><a class="" href="#">
+           <%= image_tag('li-in-Bug.png', class: "logo__social-media") %>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+      </div>
+    <div class="col-md-4 footer__logo-desktopTablet">
+      <a>
+        <div class="footer__logo">
+        <div class="footer__logo--image">
+          <%= image_tag('compass-white.svg')%>
+        </div>
+        <div class="footer__logo--name">
+          <h5><span class="logo__first-letter__footer">Z</span>inovief<h5>
+        </div>
+        <div class="footer__logo--text">
+          <span>Your compass towards reaching the right legal decision and solution.</span>
+        </div>
+        </div>
+      </a>
+    </div>
   </div>
-</nav>
+
+  </div>
 </footer>
