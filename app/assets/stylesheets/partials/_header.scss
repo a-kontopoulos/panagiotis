@@ -30,11 +30,7 @@
 
 
 
-.logo__first-letter {
-  color: #67001a;
-  font-family: 'Commissioner-Light';
-  letter-spacing: 1px;
-}
+
 
 .logo {
 
@@ -43,14 +39,22 @@
   flex-wrap: nowrap;
   font-family: 'Jura-Regular';
 
+  .logo__first-letter {
+    color: #67001a;
+    font-family: 'Commissioner-Light';
+    letter-spacing: 1px;
+  }
+
 
   .logo__name {
     padding: 0 0 0 1rem;
     display: flex;
     flex-direction: column;
+    font-family: 'Jura-Regular';
 
     .logo__panagiotis {
       display: flex;
+      font-family: 'Jura-Regular';
     }
 
     .logo__subheader {
@@ -82,6 +86,15 @@
   align-self: center;
   padding: 0 0 0 1rem;
 }
+
+  .nav-item {
+
+    li {
+    color: #67001a;
+  }
+
+}
+
 
 
 @media (max-width: 480px) {
