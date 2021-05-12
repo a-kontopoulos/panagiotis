@@ -12,6 +12,9 @@
   </div>
 </div>
 <div class="about" id = "about">
+  <div class="about__image--mobile">
+    <%= image_tag('profile-pic-moble.jpeg', class: "") %>
+  </div>
   <div class="row">
     <div class="col-lg-8">
       <div class="about__text--header">
@@ -24,8 +27,8 @@
       </div>
       <%= link_to 'Contact Us', contact_path, class: "btn btn-outline-primary button__contact" %>
     </div>
-    <div class="col-lg-4">
-      <%= image_tag('profile-pic.jpeg', class: "about__profile-pic") %>
+    <div class="col-lg-4 about__image--desktop">
+      <%= image_tag('profile-pic.jpeg', class: "") %>
     </div>
   </div>
 </div>
