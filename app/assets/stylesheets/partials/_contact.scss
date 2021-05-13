@@ -16,15 +16,45 @@
     flex-direction: column;
     justify-content: space-between;
 
-
-
-
     li {
       margin: 0 0 .4em 0;
+
       color: #72797e;
     }
 
   }
+
+  .contact__form {
+
+    .form-control {
+
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    form {
+    border: 1px solid #67001a;
+    //background-color: #67001a;
+    border-radius: 5px;
+    padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+
+    input, textarea {
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-radius: 0;
+      border-bottom: 1px solid #67001a;
+    }
+
+
+  }
+
+
+
+}
 
   .contact__map {
 

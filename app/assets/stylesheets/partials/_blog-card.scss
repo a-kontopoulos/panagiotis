@@ -77,3 +77,22 @@
 
 
 }
+
+@media (max-width: 680px) {
+  .blog-card__thumb {
+    img {
+    height: 170px;
+  }
+  }
+
+.blog-card__footer {
+
+    padding:  1rem 1rem 1rem 1rem;
+
+  .blog-card__title {
+    font-size: 1.5rem;
+  }
+
+}
+
+}

@@ -2,8 +2,6 @@
 
 .language {
 
-
-
   .header__languages {
 
     display: flex;
@@ -28,10 +26,6 @@
 
 }
 
-
-
-
-
 .logo {
 
   display: flex;
@@ -42,13 +36,13 @@
 
   .logo__first-letter {
     color: #67001a;
-    font-family: 'Commissioner-Light';
     letter-spacing: 1px;
+    font-size: inherit;
   }
 
 
   .logo__name {
-    padding: 0 0 0 1rem;
+    padding: 0 0 0 .5rem;
     display: flex;
     flex-direction: column;
     font-family: 'Jura-Regular';

@@ -1,9 +1,6 @@
-
-
 /* ==============================
 /*  Footer
  * ============================== */
-
 
  .content {
   min-height: calc(100vh - 60px);
@@ -11,7 +8,8 @@
 }
 
 .footer {
-
+  display: flex;
+  flex-direction: row;
   padding: 1rem 0 0 0;
   margin: 0 0 1rem 0;
   background-color: #192127;
@@ -33,8 +31,6 @@
 
     }
 
-
-
     .footer__phone-number {
       li {
         font-size: .8rem;
@@ -50,6 +46,11 @@
     .footer__address {
       li {
         font-size: .8rem;
+
+      }
+
+      a {
+        text-decoration: none;
       }
 
       .footer__address--title {
@@ -105,6 +106,7 @@
     align-items: center;
 
 
+
     .footer__logo--image {
 
 
@@ -116,10 +118,14 @@
 
       .h5, h5 {
         font-size: 4rem;
+        font-family: 'Jura-Bold';
+        margin: -.2em 0 0 0;
       }
 
     .logo__first-letter__footer{
-      color: #67001a;;
+      color: #67001a;
+      font-size: inherit;
+      font-family: inherit;
     }
 
   }
@@ -153,11 +159,16 @@
     margin: 0 0 1.5rem 0;
     align-items: center;
 
+    .footer__logo--text {
+      padding: .5rem 0 0 0;
+      width: 80%;
+    }
+
   }
 
   .footer__contact {
     margin: 0 0 0.5rem 0;
-    padding: 0 0 0 4rem;
+    padding: 0 0 0 2rem;
 
     .footer__address {
       padding: 1rem 0 0 0;
@@ -167,7 +178,7 @@
 
   .footer__menu {
 
-    padding: 0 0 0 4rem;
+    padding: 0 0 0 2rem;
 
     .footer__menu--socialmedia {
 
@@ -175,10 +186,7 @@
 
     }
 
-
-
   }
-
 
   }
 
